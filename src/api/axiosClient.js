@@ -13,7 +13,7 @@ const axiosClient = axios.create({
 
 // Attach the bearer token (if present) to every outgoing request.
 axiosClient.interceptors.request.use((config) => {
-  const token = localStorage.getItem('pita_token')
+  const token = localStorage.getItem('token')
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
   }
@@ -26,8 +26,9 @@ axiosClient.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response && error.response.status === 401) {
-      localStorage.removeItem('pita_token')
-      localStorage.removeItem('pita_username')
+      localStorage.removeItem('token')
+      localStorage.removeItem('username')
+      localStorage.removeItem('village')
       if (window.location.pathname !== '/login') {
         window.location.href = '/login'
       }

@@ -17,7 +17,7 @@ export default function Dashboard() {
   const [statusById, setStatusById] = useState({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
-  const { username } = useAuth()
+  const { username, village } = useAuth()
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -85,7 +85,7 @@ export default function Dashboard() {
           </h2>
           <div className="flex items-center gap-2 mt-1">
             <span className="material-symbols-outlined text-primary text-sm">location_on</span>
-            <p className="text-on-surface-variant font-medium text-sm">Posyandu Anda</p>
+            <p className="text-on-surface-variant font-medium text-sm">{village}</p>
           </div>
         </div>
         <button

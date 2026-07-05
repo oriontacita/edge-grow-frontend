@@ -94,7 +94,8 @@ export default function MeasurementForm() {
           (a, b) => new Date(b.created_at || b.measurement_date) - new Date(a.created_at || a.measurement_date),
         )[0]
         if (latest) {
-          navigate(`/hasil/${latest.id}`)
+          // navigate(`/hasil/${latest.id}`)
+          navigate(`/data-anak/${toddlerId}`)
         } else {
           navigate(`/data-anak/${toddlerId}`)
         }

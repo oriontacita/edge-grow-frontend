@@ -82,7 +82,7 @@ export default function ToddlerForm() {
       if (isEdit) {
         await updateToddler(toddlerId, payload)
         showToast('Data anak berhasil diperbarui')
-        navigate(`/data-anak/${toddlerId}`)
+        navigate(`/data-anak/`)
       } else {
         await createToddler(payload)
         showToast('Data anak berhasil disimpan')

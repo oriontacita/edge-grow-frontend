@@ -9,6 +9,7 @@ import ToddlerForm from './pages/ToddlerForm'
 import MeasurementForm from './pages/MeasurementForm'
 import Hasil from './pages/Hasil'
 import Sinkronisasi from './pages/Sinkronisasi'
+import Settings from './pages/Settings'
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/hasil/:measurementId" element={<Hasil />} />
 
           <Route path="/sinkronisasi" element={<Sinkronisasi />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
