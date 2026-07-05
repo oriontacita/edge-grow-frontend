@@ -1,7 +1,5 @@
-# PITA — Pemantauan Tumbuh Kembang Anak (React + Vite)
-
-Konversi dari prototipe statis `PITA_app.html` menjadi aplikasi React yang
-terhubung ke API sungguhan, sesuai `apidocs.md`.
+# Orion-Egde-Grow — Pemantauan Tumbuh Kembang Anak (React + Vite)
+terhubung ke API backend, sesuai <a href="https://github.com/oriontacita/edge-grow-api-backend.git">edge grow api backend</a>.
 
 ## Stack
 
