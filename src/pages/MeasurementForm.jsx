@@ -81,7 +81,9 @@ export default function MeasurementForm() {
       if (isEdit) {
         await updateMeasurement(measurementId, payload)
         showToast('Data pengukuran berhasil diperbarui')
-        navigate(`/hasil/${measurementId}`)
+        // navigate(`/hasil/${measurementId}`)
+          navigate(`/data-anak/${toddlerId}`)
+
       } else {
         await createMeasurement(toddlerId, payload)
         showToast('Data pengukuran berhasil disimpan')
@@ -94,7 +96,6 @@ export default function MeasurementForm() {
           (a, b) => new Date(b.created_at || b.measurement_date) - new Date(a.created_at || a.measurement_date),
         )[0]
         if (latest) {
-          // navigate(`/hasil/${latest.id}`)
           navigate(`/data-anak/${toddlerId}`)
         } else {
           navigate(`/data-anak/${toddlerId}`)
@@ -279,7 +280,7 @@ export default function MeasurementForm() {
                       disabled={saving}
                       className="w-full md:w-auto min-w-[200px] h-12 bg-primary hover:bg-primary-container text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all active:scale-95 disabled:opacity-60"
                     >
-                      {saving ? 'Menyimpan...' : 'Analisis Sekarang'}
+                      {saving ? 'Menyimpan...' : 'Simpan'}
                     </button>
                     <button
                       type="button"

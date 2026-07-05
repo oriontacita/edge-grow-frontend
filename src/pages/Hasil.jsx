@@ -146,15 +146,14 @@ export default function Hasil() {
         </section>
 
         {/* Right: rekomendasi menu (illustrative) */}
-        <section className="col-span-12 lg:col-span-7 bg-surface rounded-2xl p-6 md:p-8 shadow-soft border border-surface-container-highest flex flex-col">
+        {/* <section className="col-span-12 lg:col-span-7 bg-surface rounded-2xl p-6 md:p-8 shadow-soft border border-surface-container-highest flex flex-col">
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-1">
               <span className="text-2xl">🥗</span>
-              <h3 className="text-xl font-bold">Rekomendasi Menu Minggu Ini</h3>
+              <h3 className="text-xl font-bold">Rekomendasi</h3>
             </div>
             <p className="text-on-surface-variant flex items-center gap-1 text-sm">
               <span className="material-symbols-outlined text-sm">info</span>
-              Contoh menu berbasis pangan lokal (belum terhubung ke API rekomendasi)
             </p>
           </div>
 
@@ -195,7 +194,7 @@ export default function Hasil() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
 
       <footer className="fixed bottom-0 left-0 md:left-64 right-0 h-20 bg-surface border-t border-surface-container-highest px-4 md:px-8 flex items-center justify-between z-30">

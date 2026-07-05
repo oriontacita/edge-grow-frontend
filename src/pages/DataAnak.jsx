@@ -171,11 +171,7 @@ export default function DataAnak() {
                       {t.birth_weight}kg / {t.birth_length}cm
                     </td>
                     <td className="px-6 py-4">
-                      <StatusBadge
-                        status={
-                          statusById[t.id]?.weightStatus || statusById[t.id]?.lengthStatus || null
-                        }
-                      />
+                      {t.status? t.status : "tidak ada status"}
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex items-center justify-center gap-1">
