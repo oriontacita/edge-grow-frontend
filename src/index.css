@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors (from original PITA design tokens) */
+  --color-secondary-fixed: #c2f280;
+  --color-secondary: #436900;
+  --color-tertiary-fixed: #e3e1f0;
+  --color-inverse-on-surface: #ffecf1;
+  --color-secondary-container: #c2f280;
+  --color-on-primary-container: #ff8dc1;
+  --color-on-tertiary-fixed-variant: #464652;
+  --color-tertiary: #2d2d38;
+  --color-on-tertiary: #ffffff;
+  --color-surface-bright: #fff8f8;
+  --color-surface-container: #fde9ee;
+  --color-surface: #ffffff;
+  --color-secondary-fixed-dim: #a7d567;
+  --color-on-primary-fixed-variant: #8a0558;
+  --color-on-surface: #23191d;
+  --color-on-surface-variant: #564149;
+  --color-primary: #5f003a;
+  --color-status-normal: #436900;
+  --color-surface-container-highest: #f2dde3;
+  --color-on-background: #23191d;
+  --color-primary-fixed: #ffd8e6;
+  --color-stunting-heavy: #b91c1c;
+  --color-stunting-heavy-bg: #fee2e2;
+  --color-stunting-moderate: #92400e;
+  --color-surface-tint: #aa2870;
+  --color-error: #ba1a1a;
+  --color-surface-variant: #f2dde3;
+  --color-on-tertiary-container: #b1b0be;
+  --color-outline-variant: #dcbfc9;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed-dim: #c7c5d4;
+  --color-tertiary-container: #43434f;
+  --color-outline: #897179;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff0f3;
+  --color-error-container: #ffdad6;
+  --color-on-secondary: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-on-secondary-fixed: #112000;
+  --color-inverse-primary: #ffafd1;
+  --color-on-tertiary-fixed: #1a1b25;
+  --color-surface-container-high: #f8e3e9;
+  --color-on-secondary-fixed-variant: #314f00;
+  --color-primary-fixed-dim: #ffafd1;
+  --color-on-primary-fixed: #3d0024;
+  --color-inverse-surface: #392d31;
+  --color-primary-container: #870055;
+  --color-background: #faf0f2;
+  --color-on-error: #ffffff;
+  --color-surface-dim: #e9d5db;
+  --color-on-secondary-container: #2d4600;
+
+  /* status colors used across cards */
+  --color-stunting-berat: #b91c1c;
+  --color-stunting-sedang: #92400e;
+  --color-normal: #436900;
+
+  /* Border radius */
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-margin-mobile: 1rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-stack-md: 1rem;
+  --spacing-stack-sm: 0.5rem;
+  --spacing-stack-lg: 1.5rem;
+  --spacing-gutter: 1rem;
+
+  /* Fonts */
+  --font-body-lg: "DM Sans", sans-serif;
+  --font-display-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "DM Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "DM Sans", sans-serif;
+
+  /* Font sizes */
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 500;
+  --text-display-lg: 32px;
+  --text-display-lg--line-height: 40px;
+  --text-display-lg--font-weight: 700;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--font-weight: 500;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 700;
+  --text-body-md: 14px;
+  --text-body-md--line-height: 20px;
+  --text-body-md--font-weight: 400;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: "DM Sans", sans-serif;
+  color: var(--color-on-surface);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
+.soft-shadow {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.07);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.07);
+}
+
+.keypad-button:active {
+  transform: scale(0.95);
+  background-color: #f2dde3;
+}
+
+.bg-pattern {
+  background-color: #fff8f8;
+  background-image: radial-gradient(#f2dde3 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+.hide-scrollbar::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #dcbfc9;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #897179;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.touch-target,
+.touch-target-44 {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
